@@ -34,6 +34,13 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* AWSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AWSDemoTests.m */; };
+		5D2683211F4C079C00085035 /* libRNS3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683201F4C078300085035 /* libRNS3.a */; };
+		5D2683251F4C08CF00085035 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683221F4C08CF00085035 /* AWSCognito.framework */; };
+		5D2683261F4C08CF00085035 /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683221F4C08CF00085035 /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D2683271F4C08CF00085035 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683231F4C08CF00085035 /* AWSCore.framework */; };
+		5D2683281F4C08CF00085035 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683231F4C08CF00085035 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D2683291F4C08CF00085035 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683241F4C08CF00085035 /* AWSS3.framework */; };
+		5D26832A1F4C08CF00085035 /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2683241F4C08CF00085035 /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		7FC0034764E64930A5C640EB /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4297D306858842D682FEE733 /* libRNImagePicker.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -201,6 +208,13 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
+		5D26831F1F4C078300085035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D2682FD1F4C078300085035 /* RNS3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNS3;
+		};
 		5D32722F1F4BE64B00385209 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -266,6 +280,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5D26832B1F4C08D000085035 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D2683261F4C08CF00085035 /* AWSCognito.framework in Embed Frameworks */,
+				5D2683281F4C08CF00085035 /* AWSCore.framework in Embed Frameworks */,
+				5D26832A1F4C08CF00085035 /* AWSS3.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -290,6 +320,10 @@
 		2D02E47B1E0B4A5D006451C7 /* AWSDemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWSDemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* AWSDemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AWSDemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4297D306858842D682FEE733 /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
+		5D2682FD1F4C078300085035 /* RNS3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNS3.xcodeproj; path = "../node_modules/react-native-s3/ios/RNS3.xcodeproj"; sourceTree = "<group>"; };
+		5D2683221F4C08CF00085035 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../node_modules/react-native-s3/ios/Frameworks/AWSCognito.framework"; sourceTree = "<group>"; };
+		5D2683231F4C08CF00085035 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../node_modules/react-native-s3/ios/Frameworks/AWSCore.framework"; sourceTree = "<group>"; };
+		5D2683241F4C08CF00085035 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../node_modules/react-native-s3/ios/Frameworks/AWSS3.framework"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -308,15 +342,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2683211F4C079C00085035 /* libRNS3.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				5D2683251F4C08CF00085035 /* AWSCognito.framework in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				5D2683271F4C08CF00085035 /* AWSCore.framework in Frameworks */,
+				5D2683291F4C08CF00085035 /* AWSS3.framework in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				7FC0034764E64930A5C640EB /* libRNImagePicker.a in Frameworks */,
@@ -458,6 +496,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5D2682FE1F4C078300085035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D2683201F4C078300085035 /* libRNS3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5D5398EB1F4BF03100935551 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +533,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				5D2682FD1F4C078300085035 /* RNS3.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -515,6 +562,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5D2683221F4C08CF00085035 /* AWSCognito.framework */,
+				5D2683231F4C08CF00085035 /* AWSCore.framework */,
+				5D2683241F4C08CF00085035 /* AWSS3.framework */,
 				13B07FAE1A68108700A75B9A /* AWSDemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* AWSDemoTests */,
@@ -564,6 +614,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				5D26832B1F4C08D000085035 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -696,6 +747,10 @@
 				{
 					ProductGroup = 5D5398EB1F4BF03100935551 /* Products */;
 					ProjectRef = 0310BD3D07924FC7AC7F1F37 /* RNImagePicker.xcodeproj */;
+				},
+				{
+					ProductGroup = 5D2682FE1F4C078300085035 /* Products */;
+					ProjectRef = 5D2682FD1F4C078300085035 /* RNS3.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -854,6 +909,13 @@
 			fileType = archive.ar;
 			path = libjschelpers.a;
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5D2683201F4C078300085035 /* libRNS3.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNS3.a;
+			remoteRef = 5D26831F1F4C078300085035 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5D3272301F4BE64B00385209 /* libthird-party.a */ = {
@@ -1109,9 +1171,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-s3/ios/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-s3/ios/**",
 				);
 				INFOPLIST_FILE = AWSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1133,9 +1197,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-s3/ios/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-s3/ios/**",
 				);
 				INFOPLIST_FILE = AWSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;

@@ -11,6 +11,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "RNS3TransferUtility.h"
 
 @implementation AppDelegate
 
@@ -32,6 +33,13 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler
+{
+  [RNS3TransferUtility interceptApplication:application
+        handleEventsForBackgroundURLSession:identifier
+                          completionHandler:completionHandler];
 }
 
 @end
